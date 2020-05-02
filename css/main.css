@@ -25,7 +25,7 @@ body {
 
 .wrapper {
     overflow: hidden;
-    min-width: 1310px;
+    min-width: 1440px;
 }
 
 .container {
@@ -245,20 +245,38 @@ fade-slider
     background-image: url('../images/content/hero/slider_pic_1.png');
 }
 
+.fade-slider__item--style-tshirts .fade-slider__text {
+    left: 50%;
+    top: 50%;
+    transform: translateX(-164%) translateY(-52%);
+}
+
 .fade-slider__item--style-games {
     background-image: url('../images/content/hero/slider_pic_2.png');
+}
+
+.fade-slider__item--style-games .fade-slider__text {
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
 }
 
 .fade-slider__item--style-presents {
     background-image: url('../images/content/hero/slider_pic_3.png');
 }
 
-.fade-slider__text {
-    position: absolute;
-    left: 50%;
-    top: 50%;
+.fade-slider__item--style-presents .fade-slider__text {
+    left: 0;
+    bottom: 0;
+    transform: translateY(-120%);
+}
 
-    transform: translate(-164%, -52%);
+.fade-slider__item--style-presents .lined-text {
+    align-items: center;
+}
+
+.fade-slider__text {
+    position: absolute;    
 }
 
 .lined-text {
@@ -271,10 +289,6 @@ fade-slider
     display: flex;
     flex-direction: column;
     align-items: start;
-}
-
-.lined-text--no-indent {
-
 }
 
 .lined-text__word {
